@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: b18e4196a56864f4fb0edd93d5fe6367
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1168116120974905734
+    second: wukong_cute_0
+  - first:
+      213: -2289661197872026060
+    second: wukong_cute_1
+  - first:
+      213: 3869560204847548250
+    second: wukong_cute_2
+  - first:
+      213: -260777474472303886
+    second: wukong_cute_3
+  - first:
+      213: -8889850578373433012
+    second: wukong_cute_4
+  - first:
+      213: -8437548979540722694
+    second: wukong_cute_5
+  - first:
+      213: 1023949635296196651
+    second: wukong_cute_6
+  - first:
+      213: 8790802131454420714
+    second: wukong_cute_7
+  - first:
+      213: 5592070609732201998
+    second: wukong_cute_8
+  - first:
+      213: -8802971835280811373
+    second: wukong_cute_9
+  - first:
+      213: -6016088175125497689
+    second: wukong_cute_10
+  - first:
+      213: 2402107289795282476
+    second: wukong_cute_11
+  - first:
+      213: -6832857348687409561
+    second: wukong_cute_12
+  - first:
+      213: 5839475957095118130
+    second: wukong_cute_13
+  - first:
+      213: -8067373628367371891
+    second: wukong_cute_14
+  - first:
+      213: 6459187960938305612
+    second: wukong_cute_15
+  - first:
+      213: 5556166921354111002
+    second: wukong_cute_16
+  - first:
+      213: 8663583365146571761
+    second: wukong_cute_17
+  - first:
+      213: -7964026497856370626
+    second: wukong_cute_18
+  - first:
+      213: 9002498626797969184
+    second: wukong_cute_19
+  - first:
+      213: -2290342734539442411
+    second: wukong_cute_20
+  - first:
+      213: 240859345617146391
+    second: wukong_cute_21
+  - first:
+      213: -233968946179974718
+    second: wukong_cute_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wukong_cute_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 417
+        width: 72
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e22e0b3940acfe0800000000000000
+      internalID: -1168116120974905734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 417
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ea7dc854d7930e0800000000000000
+      internalID: -2289661197872026060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 419
+        width: 72
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a570de6218073b530800000000000000
+      internalID: 3869560204847548250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 437
+        width: 90
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2a7a4c448816cf0800000000000000
+      internalID: -260777474472303886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_4
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 437
+        width: 90
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4920c9dff7e0a480800000000000000
+      internalID: -8889850578373433012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_5
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 438
+        width: 90
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbf38b38edc7ea80800000000000000
+      internalID: -8437548979540722694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 322
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2878b7a4ccc53e00800000000000000
+      internalID: 1023949635296196651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_7
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 322
+        width: 71
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6661086f33ff970800000000000000
+      internalID: 8790802131454420714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_8
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 324
+        width: 72
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e6dfb67960b9d40800000000000000
+      internalID: 5592070609732201998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_9
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 362
+        width: 90
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a915681cf85d580800000000000000
+      internalID: -8802971835280811373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_10
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 363
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a87738edaf828ca0800000000000000
+      internalID: -6016088175125497689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_11
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 362
+        width: 91
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26cf986adff55120800000000000000
+      internalID: 2402107289795282476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 227
+        width: 71
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ec1928170dc21a0800000000000000
+      internalID: -6832857348687409561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_13
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 229
+        width: 72
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235b611b17cf90150800000000000000
+      internalID: 5839475957095118130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 231
+        width: 71
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d810fc28d6eea0090800000000000000
+      internalID: -8067373628367371891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_15
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 289
+        width: 91
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48153d6a35a3a950800000000000000
+      internalID: 6459187960938305612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_16
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 287
+        width: 89
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18661c80687b1d40800000000000000
+      internalID: 5556166921354111002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_17
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 287
+        width: 89
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f37b814b2b3b3870800000000000000
+      internalID: 8663583365146571761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 132
+        width: 71
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38097d68181a7190800000000000000
+      internalID: -7964026497856370626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_19
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 136
+        width: 72
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f1c35cdcc4fec70800000000000000
+      internalID: 9002498626797969184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_20
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 214
+        width: 89
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51731edea611730e0800000000000000
+      internalID: -2290342734539442411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 37
+        width: 71
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712d7587c44b75300800000000000000
+      internalID: 240859345617146391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wukong_cute_22
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 43
+        width: 72
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9587aab76c0ccf0800000000000000
+      internalID: -233968946179974718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
