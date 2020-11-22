@@ -5,45 +5,44 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //Outlets
-    private float moveSpeed;
-    private bool isMoving;
-    private Vector2 input;
+    Rigidbody2D _rigidbody;
+    Animator _animator;
 
-    //Static variables
-    private float initialSpeed = 5;
-    
-    private void Update() {
-        if(!isMoving){
-            input.x = Input.GetAxisRaw("Horizontal");
-            input.y = Input.GetAxisRaw("Vertical");
-
-            //Prevent diagonal movement
-            if(input.x != 0) input.y = 0;
-            if(input != Vector2.zero)
-            {
-                var targetPos = transform.position;
-                targetPos.x += input.x;
-                targetPos.y += input.y;
-
-                StartCoroutine(Move(targetPos));
-            }
-        }   
+    //Configuration
+    public KeyCode keyUp;
+    public KeyCode keyDown;
+    public KeyCode keyLeft;
+    public KeyCode keyRight;
+    public float moveSpeed;
+    // Start is called before the first frame update
+    void Start()
+    {
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
-    IEnumerator Move(Vector3 targetPos){
-        isMoving = true; 
-
-        while((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon){
-            transform.position = Vector3.MoveTowards(transform.position, targetPos,
-            moveSpeed * Time.deltaTime);
-            yield return null;
+    void FixedUpdate() {
+        if(Input.GetKey(keyUp)) {
+            _rigidbody.AddForce(Vector2.up * moveSpeed, ForceMode2D.Impulse);
         }
-        transform.position = targetPos;
-
-        isMoving = false;
+        if(Input.GetKey(keyDown)) {
+            _rigidbody.AddForce(Vector2.down * moveSpeed, ForceMode2D.Impulse);
+        }
+        if(Input.GetKey(keyLeft)) {
+            _rigidbody.AddForce(Vector2.left * moveSpeed, ForceMode2D.Impulse);
+        }
+        if(Input.GetKey(keyRight)) {
+            _rigidbody.AddForce(Vector2.right * moveSpeed, ForceMode2D.Impulse);
+        }
     }
-
-    private void Start() {
-        moveSpeed = initialSpeed;
-    }   
+    // Update is called once per frame
+    void Update()
+    {
+        float movementSpeed = _rigidbody.velocity.magnitude;
+        _animator.SetFloat("speed", movementSpeed);
+        if(movementSpeed > 0.1f) {
+            _animator.SetFloat("movementX", _rigidbody.velocity.x);
+            _animator.SetFloat("movementY", _rigidbody.velocity.y);
+        }
+    }
 }
