@@ -34,6 +34,9 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(keyRight)) {
             _rigidbody.AddForce(Vector2.right * moveSpeed, ForceMode2D.Impulse);
         }
+        if(Input.GetKey(KeyCode.Escape)) {
+            MenuController.instance.Show();
+        }
     }
     // Update is called once per frame
     void Update()
@@ -44,5 +47,17 @@ public class PlayerController : MonoBehaviour
             _animator.SetFloat("movementX", _rigidbody.velocity.x);
             _animator.SetFloat("movementY", _rigidbody.velocity.y);
         }
+
+    }
+
+    void OnCollisionStay2D(Collision2D other){
+        //Check if we colllide with ground
+        if(other.gameObject.layer == LayerMask.NameToLayer("LongGrass")){
+            if (Random.Range(0,1000)<10)
+            {
+                Debug.Log(Random.Range(0,9));
+            }
+        }
+        
     }
 }
