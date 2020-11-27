@@ -4787,6 +4787,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1084478656}
+  - component: {fileID: 1084478657}
   m_Layer: 0
   m_Name: BattleSystem
   m_TagString: Untagged
@@ -4810,6 +4811,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1084478657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084478655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2886deb47e41040f9905af02ce010d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleUnit: {fileID: 1366974932}
+  battleHud: {fileID: 1489612494}
 --- !u!1 &1130392967
 GameObject:
   m_ObjectHideFlags: 0
@@ -6536,6 +6551,7 @@ GameObject:
   - component: {fileID: 1366974929}
   - component: {fileID: 1366974931}
   - component: {fileID: 1366974930}
+  - component: {fileID: 1366974932}
   m_Layer: 0
   m_Name: PlayUnit
   m_TagString: Untagged
@@ -6581,7 +6597,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 818cf159951cf9a4e8e810b2bbab4096, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6599,6 +6615,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366974928}
   m_CullTransparentMesh: 0
+--- !u!114 &1366974932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366974928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b55c46f380b74d45aae4285baf401ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _base: {fileID: 11400000, guid: 4b92f23436ea94442b9e20b79906a691, type: 2}
+  _level: 6
+  isPlayUnit: 1
 --- !u!1 &1416626628
 GameObject:
   m_ObjectHideFlags: 0
@@ -6870,6 +6901,7 @@ GameObject:
   - component: {fileID: 1489612491}
   - component: {fileID: 1489612493}
   - component: {fileID: 1489612492}
+  - component: {fileID: 1489612494}
   m_Layer: 0
   m_Name: PlayHud
   m_TagString: Untagged
@@ -6936,6 +6968,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489612490}
   m_CullTransparentMesh: 0
+--- !u!114 &1489612494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489612490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc10d7b69309461196696f858735b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpBar: {fileID: 1959647928}
+  name: {fileID: 889013266}
+  level: {fileID: 2015177341}
 --- !u!1 &1541354165
 GameObject:
   m_ObjectHideFlags: 0
@@ -7545,7 +7592,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -29, y: -25}
+  m_AnchoredPosition: {x: 28, y: -25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2015177341

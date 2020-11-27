@@ -20,12 +20,20 @@ public class MonsterBase : ScriptableObject
    public int spAttack;
    public int spDefense;
    public int speed;
-   public LearnableMove[] array;
 
-//    public int getHP()
-//    {
-//        return maxhp;
-//    }
+   public List<LearnableMove> learnablemove;
+
+//    public Dictionary<MoveBase,int> mymove = new Dictionary<MoveBase, int>();
+
+   public int getHP()
+   {
+       return maxhp;
+   }
+
+   public string getName()
+   {
+       return name;
+   }
 //    public int getAttack()
 //    {
 //        return attack;
@@ -52,21 +60,22 @@ public class MonsterBase : ScriptableObject
 //        return learnablemoves;
 //    }
 }
-
+[System.Serializable]
 public class LearnableMove
 {
 
-    public MoveBase mymovebase;
+    // public MoveBase mymovebase;
+    // public int level;
+    public MoveBase movebase;
     public int level;
-    
+
     // public MoveBase MoveBase
     // {
-    //     get{ return mymoveBase;}
+    //     get {return movebase;}
     // }
-
     // public int Level
     // {
-    //     get{return level;}
+    //     get {return level;}
     // }
 }
 

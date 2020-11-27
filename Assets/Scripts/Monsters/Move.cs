@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Move
 {
-    public MoveBase Base {get;set;}
-    public int maxTimes {get;set;}
+    public MoveBase _Base;
+    public int maxTimes;
 
-    public Move(MoveBase mBase, int maxTimes)
+    public Move(MoveBase mBase)
     {
-        Base = mBase;
-        maxTimes = maxTimes;
+        _Base = mBase;
+        maxTimes = mBase.getMaxTimes();
     }
 }

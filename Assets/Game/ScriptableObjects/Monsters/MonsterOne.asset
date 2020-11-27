@@ -24,3 +24,8 @@ MonoBehaviour:
   spAttack: 30
   spDefense: 30
   speed: 5
+  move:
+  - movebase: {fileID: 11400000, guid: 74e6d90edaf984f3c88c64ae43332129, type: 2}
+    level: 2
+  - movebase: {fileID: 11400000, guid: fc6d83c6e113a435284338cfe6ef68f6, type: 2}
+    level: 3

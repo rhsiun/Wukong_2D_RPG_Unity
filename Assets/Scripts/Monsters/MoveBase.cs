@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [CreateAssetMenu()]
-public class MoveBase : ScriptableObject
+public class MoveBase:ScriptableObject
 {
    public string name;
    public string description;
