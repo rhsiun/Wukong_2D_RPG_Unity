@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         if(other.gameObject.layer == LayerMask.NameToLayer("LongGrass")){
             if (Random.Range(0,1000)<10)
             {
-                Debug.Log(Random.Range(0,9));
+                // Debug.Log(Random.Range(0,9));
             }
         }
         

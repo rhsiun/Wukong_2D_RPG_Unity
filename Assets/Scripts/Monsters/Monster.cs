@@ -62,6 +62,11 @@ public class Monster
     {
         get{return Mathf.FloorToInt((_base.speed * _level)/100f)+10;}
     }
+
+    public List<Move> getMoves()
+    {
+        return _moves;
+    }
     // public int attack
     // {
     //     get{return Mathf.FloorToInt((_base.getAttack() * _level)/100f)+5;}

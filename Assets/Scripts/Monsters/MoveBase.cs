@@ -9,10 +9,9 @@ public class MoveBase:ScriptableObject
    public string name;
    public string description;
    public MonsterType type;
-
-   int power;
-   int accuracy;
-   int maxTimes;
+   public int power;
+   public int accuracy;
+   public int maxTimes;
 
    public int getPower()
    {

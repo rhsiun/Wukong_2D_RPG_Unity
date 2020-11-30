@@ -15,3 +15,6 @@ MonoBehaviour:
   name: Tackle
   description: A way to attack other monster.
   type: 0
+  power: 20
+  accuracy: 20
+  maxTimes: 20

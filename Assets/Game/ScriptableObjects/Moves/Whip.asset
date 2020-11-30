@@ -15,3 +15,6 @@ MonoBehaviour:
   name: Whip
   description: A way to attack other monster.
   type: 3
+  power: 14
+  accuracy: 15
+  maxTimes: 16
