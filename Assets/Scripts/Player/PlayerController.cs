@@ -50,14 +50,15 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void OnCollisionStay2D(Collision2D other){
-        //Check if we colllide with ground
-        if(other.gameObject.layer == LayerMask.NameToLayer("LongGrass")){
-            if (Random.Range(0,1000)<10)
-            {
-                // Debug.Log(Random.Range(0,9));
-            }
-        }
+    // void OnCollisionStay2D(Collision2D other){
+    //     //Check if we colllide with ground
+    //     if(other.gameObject.layer == LayerMask.NameToLayer("LongGrass")){
+    //         Debug.Log("longgrass");
+    //         if (Random.Range(0,1000)<10)
+    //         {
+    //             // Debug.Log(Random.Range(0,9));
+    //         }
+    //     }
         
-    }
+    // }
 }
