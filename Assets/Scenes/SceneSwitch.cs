@@ -12,6 +12,9 @@ public class SceneSwitch : MonoBehaviour
             if(this.CompareTag("Enemy")){
                 SceneManager.LoadScene(2);
             }
+            if(this.CompareTag("Field")) {
+                SceneManager.LoadScene(0);
+            }
         }
     }
 

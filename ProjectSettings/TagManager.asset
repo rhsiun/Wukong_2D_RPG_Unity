@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - House
+  - Field
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - LongGrass
   - SolidObjects
   - Ground
-  - 
+  - FrontObjects
   - 
   - 
   - 
@@ -46,9 +47,15 @@ TagManager:
   - name: Background
     uniqueID: 3608131555
     locked: 0
+  - name: LongGrass
+    uniqueID: 1363993559
+    locked: 0
   - name: Foreground
     uniqueID: 4030866961
     locked: 0
   - name: Player
     uniqueID: 3327620815
+    locked: 0
+  - name: FrontObjects
+    uniqueID: 1278193015
     locked: 0
