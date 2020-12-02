@@ -15,6 +15,9 @@ public class SceneSwitch : MonoBehaviour
             if(this.CompareTag("Field")) {
                 SceneManager.LoadScene(0);
             }
+            if(this.CompareTag("Cave")) {
+                SceneManager.LoadScene(3);
+            }
         }
     }
 
