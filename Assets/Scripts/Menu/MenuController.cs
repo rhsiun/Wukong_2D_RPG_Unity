@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class MenuController : MonoBehaviour
     public GameObject profileMenu;
     public GameObject optionsMenu;
     public GameObject mapMenu;
+    public Image swordImg;
 
 
 
@@ -25,6 +27,7 @@ public class MenuController : MonoBehaviour
     {
         instance = this;
         Hide();
+        swordImg.enabled=false;
     }
 
     // Update is called once per frame

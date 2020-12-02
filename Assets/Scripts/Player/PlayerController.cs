@@ -14,6 +14,11 @@ public class PlayerController : MonoBehaviour
     public KeyCode keyLeft;
     public KeyCode keyRight;
     public float moveSpeed;
+
+    // public Transform sword;
+    // public float distance;
+    // public float minDistance = 1.5f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -34,9 +39,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(keyRight)) {
             _rigidbody.AddForce(Vector2.right * moveSpeed, ForceMode2D.Impulse);
         }
-        if(Input.GetKey(KeyCode.Escape)) {
-            MenuController.instance.Show();
-        }
+        
     }
     // Update is called once per frame
     void Update()
@@ -47,18 +50,11 @@ public class PlayerController : MonoBehaviour
             _animator.SetFloat("movementX", _rigidbody.velocity.x);
             _animator.SetFloat("movementY", _rigidbody.velocity.y);
         }
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+            MenuController.instance.Show();
+        }
 
     }
 
-    // void OnCollisionStay2D(Collision2D other){
-    //     //Check if we colllide with ground
-    //     if(other.gameObject.layer == LayerMask.NameToLayer("LongGrass")){
-    //         Debug.Log("longgrass");
-    //         if (Random.Range(0,1000)<10)
-    //         {
-    //             // Debug.Log(Random.Range(0,9));
-    //         }
-    //     }
-        
-    // }
+  
 }
