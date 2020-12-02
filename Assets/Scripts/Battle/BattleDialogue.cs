@@ -81,7 +81,7 @@ public class BattleDialogue: MonoBehaviour
     }
     public void SetMoveNames(List<Move> moves)
     {
-          Debug.Log(moves.Count);
+        //Debug.Log(moves.Count);
         for(int i=0; i<moveTexts.Count; i++)
         {
             if(i<moves.Count)

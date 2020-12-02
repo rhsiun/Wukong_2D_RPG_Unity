@@ -30,7 +30,7 @@ public class BattleSystem : MonoBehaviour
         
         //To do: Use own code for coroutine
         //  StartCoroutine(battleDialogue.TypeDialog($"A wild {battleUnit.getBattleMonster()._base.name} appeared"));
-        yield return (battleDialogue.TypeDialog($"A wild {enemyUnit.getBattleMonster()._base.name} appeared"));
+        yield return (battleDialogue.TypeDialog($"{enemyUnit.getBattleMonster()._base.name} appeared, defeat him to get into the cave!"));
         yield return new WaitForSeconds(1f);
 
         PlayerAction();
@@ -103,14 +103,14 @@ public class BattleSystem : MonoBehaviour
     }
     void HandleActionSelection()
     {
-        if(Input.GetKeyDown(KeyCode.DownArrow))
+        if(Input.GetKeyDown(KeyCode.S))
         {
             if(currentAction<1)
             {
                 currentAction++;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        else if (Input.GetKeyDown(KeyCode.W))
         {
             if(currentAction>0)
             {
@@ -120,7 +120,7 @@ public class BattleSystem : MonoBehaviour
 
         battleDialogue.UpdateActionSelection(currentAction);
 
-        if(Input.GetKeyDown(KeyCode.Z))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             if(currentAction == 0)
             {

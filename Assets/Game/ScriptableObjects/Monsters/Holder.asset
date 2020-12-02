@@ -12,24 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdb1296b509304364a3cdaf1704d3c23, type: 3}
   m_Name: Holder
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  front: {fileID: 0}
-  back: {fileID: 0}
+  name: The Guardian
+  description: Guardian of the cave
+  front: {fileID: -5733105490684522192, guid: e654bcacefd22f846b0ee0e86298c4eb, type: 3}
+  back: {fileID: -5509733080930352012, guid: e654bcacefd22f846b0ee0e86298c4eb, type: 3}
   typeOne: 0
   typeTwo: 0
-  maxhp: 0
-  attack: 0
-  defense: 0
-  spAttack: 0
-  spDefense: 0
-  speed: 0
+  maxhp: 150
+  attack: 20
+  defense: 20
+  spAttack: 20
+  spDefense: 20
+  speed: 50
   learnablemove:
-  - movebase: {fileID: 0}
-    level: 0
-  - movebase: {fileID: 0}
-    level: 0
-  - movebase: {fileID: 0}
-    level: 0
-  - movebase: {fileID: 0}
-    level: 0
+  - movebase: {fileID: 11400000, guid: 74e6d90edaf984f3c88c64ae43332129, type: 2}
+    level: 1
+  - movebase: {fileID: 11400000, guid: fc6d83c6e113a435284338cfe6ef68f6, type: 2}
+    level: 1

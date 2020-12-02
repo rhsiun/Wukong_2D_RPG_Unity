@@ -25,6 +25,6 @@ public class BattleHud : MonoBehaviour
     {
         hpBar.fillAmount = monster.currentHP/monster.maxhp;
         name.text = monster.getName();
-        level.text = "Lvl: "+monster._level;
+        //level.text = "Lvl: "+monster._level;
     }
 }
