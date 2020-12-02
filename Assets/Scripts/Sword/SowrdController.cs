@@ -9,15 +9,18 @@ public class SowrdController : MonoBehaviour
     public Transform player;
     public Image swordImg;
     public float distance;
-    public float minDistance = 3f;
+    public bool haveSWORD = false;
+    float minDistance = 1.5f;
 
-    void FixedUpdate() {
+    void Update() {
         distance = Vector3.Distance(transform.position, player.position);
-        if (distance <= minDistance)
+        if (distance < minDistance)
         {
+             Debug.Log("Area");
             if(Input.GetKeyDown(KeyCode.Space))
             {
                 Debug.Log("space");
+                haveSWORD = true;
                 swordImg.enabled=true;
                 Destroy(gameObject);
                 
