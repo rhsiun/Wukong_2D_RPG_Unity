@@ -15,8 +15,8 @@ public class BattleDialogue: MonoBehaviour
     public List<Text> moveTexts;
     public Text maxTimes;
     public Text type;
-    public void setDialogue(string dialogue)
 
+    public void setDialogue(string dialogue)
     {
         dialogueText.text = dialogue;
     }
