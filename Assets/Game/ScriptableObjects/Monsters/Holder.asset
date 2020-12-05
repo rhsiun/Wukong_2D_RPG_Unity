@@ -18,9 +18,9 @@ MonoBehaviour:
   back: {fileID: -5509733080930352012, guid: e654bcacefd22f846b0ee0e86298c4eb, type: 3}
   typeOne: 0
   typeTwo: 0
-  maxhp: 150
-  attack: 20
-  defense: 20
+  maxhp: 200
+  attack: 50
+  defense: 100
   spAttack: 20
   spDefense: 20
   speed: 50

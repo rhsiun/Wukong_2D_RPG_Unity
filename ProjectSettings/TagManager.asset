@@ -8,6 +8,9 @@ TagManager:
   - House
   - Field
   - Cave
+  - HouseAG
+  - Boss
+  - Friend
   layers:
   - Default
   - TransparentFX

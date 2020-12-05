@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bdb1296b509304364a3cdaf1704d3c23, type: 3}
-  m_Name: Protagonist
+  m_Name: Boss
   m_EditorClassIdentifier: 
-  name: Wukong
+  name: Boss
   description: 
-  front: {fileID: 7255839269855876586, guid: 732c4d356a6200d428ad96b62d6e4b50, type: 3}
-  back: {fileID: -7680768559880594604, guid: 732c4d356a6200d428ad96b62d6e4b50, type: 3}
+  front: {fileID: 1376278525023598380, guid: e8ed4a2054750f041a372bf30abc8d3b, type: 3}
+  back: {fileID: 8309743082645120170, guid: e8ed4a2054750f041a372bf30abc8d3b, type: 3}
   typeOne: 0
   typeTwo: 0
-  maxhp: 200
-  attack: 30
-  defense: 110
-  spAttack: 30
-  spDefense: 30
+  maxhp: 300
+  attack: 80
+  defense: 100
+  spAttack: 0
+  spDefense: 0
   speed: 50
   learnablemove:
-  - movebase: {fileID: 11400000, guid: a0a90ce81f3f1db4c84e53d7a05a41a3, type: 2}
+  - movebase: {fileID: 11400000, guid: 6188626797cf98941a7991cea4b98ad4, type: 2}
     level: 0
-  - movebase: {fileID: 11400000, guid: 0b26c142f5308dc42ba7b76e030dc7e1, type: 2}
+  - movebase: {fileID: 11400000, guid: 2adfdf09bd857e0498a56629b6e39539, type: 2}
     level: 0

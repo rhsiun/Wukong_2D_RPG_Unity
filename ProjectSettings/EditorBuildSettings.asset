@@ -18,6 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/BattleScene.unity
     guid: f5cb335d89fba75408a8a0391a050fdf
   - enabled: 1
+    path: Assets/Scenes/AfterGuardian.unity
+    guid: 8931b674fdf94cb43a71680c18d6daa2
+  - enabled: 1
     path: Assets/Scenes/Cave.unity
     guid: 6afd078c726000c4394e3537ea72b665
+  - enabled: 1
+    path: Assets/Scenes/AfterBoss.unity
+    guid: fb41dcd38e448834da98f112dd2ab5d2
+  - enabled: 1
+    path: Assets/Scenes/CaveBattleScene.unity
+    guid: 37c7b8ff04e9303469d7ce530e83bc94
   m_configObjects: {}

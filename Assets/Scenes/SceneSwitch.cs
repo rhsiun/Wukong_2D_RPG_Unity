@@ -7,6 +7,7 @@ public class SceneSwitch : MonoBehaviour
     //instances
     public HouseDialogueController houseDialogue;
     public HomeDialogue homeDialogue;
+    public AGDialogue aGDialogue;
     public GameObject dialogueBox;
     private bool exitedHouse;
     private bool haveSword;
@@ -25,9 +26,21 @@ public class SceneSwitch : MonoBehaviour
                    SceneManager.LoadScene(1);
                 }
             }
+            if(this.CompareTag("HouseAG")){
+                if(exitedHouse && haveSword){
+                    StartCoroutine(doNotGoBackInDialogueAG());
+                } else {
+                   new WaitForSeconds(1f);
+                   SceneManager.LoadScene(1);
+                }
+            }
             if(this.CompareTag("Enemy")){
                 new WaitForSeconds(1f);
                 SceneManager.LoadScene(3);
+            }
+            if(this.CompareTag("Boss")){
+                new WaitForSeconds(1f);
+                SceneManager.LoadScene(7);
             }
             if(this.CompareTag("Field")) {
                 if(haveSword){
@@ -40,7 +53,7 @@ public class SceneSwitch : MonoBehaviour
             }
             if(this.CompareTag("Cave")) {
                 new WaitForSeconds(1f);
-                SceneManager.LoadScene(4);
+                SceneManager.LoadScene(5);
             }
         }
     }
@@ -55,7 +68,14 @@ public class SceneSwitch : MonoBehaviour
         dialogueBox.SetActive(true);
         yield return (homeDialogue.TypeDialog("Do not go back! Go find your friend!"));
         yield return new WaitForSeconds(1f);
-        //HouseDialogueController.SetActive(false);
+        dialogueBox.SetActive(false);
+    }
+    
+    public IEnumerator doNotGoBackInDialogueAG()
+    {   
+        dialogueBox.SetActive(true);
+        yield return (aGDialogue.TypeDialog("Do not go back! Go find your friend!"));
+        yield return new WaitForSeconds(1f);
         dialogueBox.SetActive(false);
     }
 
@@ -64,7 +84,6 @@ public class SceneSwitch : MonoBehaviour
         dialogueBox.SetActive(true);
         yield return (houseDialogue.TypeDialog("Do not go out yet! Go find yourself a weapon!"));
         yield return new WaitForSeconds(1f);
-        //HouseDialogueController.SetActive(false);
         dialogueBox.SetActive(false);
     }
 }

@@ -7,6 +7,7 @@ public class Monster
     public MonsterBase _base;
     public int _level;
     public int currentHP;
+    public int maxHP;
 
     public List<Move> _moves;
 
@@ -15,6 +16,7 @@ public class Monster
         _base = mBase;
         _level = mLevel;
         _moves = new List<Move>();
+        maxHP = _base.maxhp;
         currentHP = _base.maxhp;
         foreach (var singleMove in _base.learnablemove)
         {
@@ -43,57 +45,26 @@ public class Monster
         get{return Mathf.FloorToInt((_base.defense * _level)/100f)+5;}
     }
 
-    public int maxhp
-    {
-        get{return Mathf.FloorToInt((_base.maxhp * _level)/100f)+10;}
-    }
-
-    public int spAttack
-    {
-        get{return Mathf.FloorToInt((_base.spAttack * _level)/100f)+10;}
-    }
-
-    public int spDefense
-    {
-        get{return Mathf.FloorToInt((_base.spDefense * _level)/100f)+10;}
-    }
-
-    public int speed
-    {
-        get{return Mathf.FloorToInt((_base.speed * _level)/100f)+10;}
-    }
-
     public List<Move> getMoves()
     {
         return _moves;
     }
-    // public int attack
-    // {
-    //     get{return Mathf.FloorToInt((_base.getAttack() * _level)/100f)+5;}
-    // }
 
-    // public int defense
-    // {
-    //     get{return Mathf.FloorToInt((_base.getDefense() * _level)/100f)+5;}
-    // }
+    public bool TakeDamage(Move move, Monster attacker) {
+        int damage = Mathf.FloorToInt(move._Base.power*((float)attacker.attack / defense));
+        Debug.Log(damage);
+        currentHP -= damage;
+        if(currentHP <= 0) {
+            currentHP = 0;
+            return true;
+        }
 
-    // public int maxhp
-    // {
-    //     get{return Mathf.FloorToInt((_base.getHP() * _level)/100f)+10;}
-    // }
+        return false;
+    }
 
-    // public int spAttack
-    // {
-    //     get{return Mathf.FloorToInt((_base.getSPATTACK() * _level)/100f)+10;}
-    // }
+    public Move GetRandomMove() {
+        int r = Random.Range(0, _moves.Count);
+        return _moves[r];
 
-    // public int spDefense
-    // {
-    //     get{return Mathf.FloorToInt((_base.getSPDEFENSE() * _level)/100f)+10;}
-    // }
-
-    // public int speed
-    // {
-    //     get{return Mathf.FloorToInt((_base.getSpeed() * _level)/100f)+10;}
-    // }
+    }
 }

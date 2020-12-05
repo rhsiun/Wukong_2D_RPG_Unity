@@ -3095,7 +3095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 0}
+  m_BoundingShape2D: {fileID: 1110002087}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!114 &777594406
@@ -4409,7 +4409,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 5.511991, y: 7.075718}
-      - {x: -1.4133011, y: 7.123203}
+      - {x: 5.428804, y: 6.9728274}
       - {x: -4.6354165, y: 7.1803865}
       - {x: -8.111514, y: 7.1028957}
       - {x: -8.23667, y: 6.981764}
@@ -4419,7 +4419,7 @@ PolygonCollider2D:
       - {x: 5.5078616, y: -3.9502504}
       - {x: 5.5994873, y: -3.9577842}
       - {x: 5.6445246, y: -3.909512}
-      - {x: 5.6300054, y: -3.8781943}
+      - {x: 5.5924106, y: 2.8511295}
       - {x: 5.6379714, y: -1.9299221}
       - {x: 5.6174583, y: 2.6375818}
 --- !u!1 &1129643032
@@ -4837,7 +4837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236427311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: -4.45, z: -17.515625}
+  m_LocalPosition: {x: -0.03, y: -4.15, z: -17.515625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4857,6 +4857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   houseDialogue: {fileID: 421265296}
   homeDialogue: {fileID: 0}
+  aGDialogue: {fileID: 0}
   dialogueBox: {fileID: 421265292}
 --- !u!1 &1271981450
 GameObject:

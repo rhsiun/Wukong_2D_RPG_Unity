@@ -424,7 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b55c46f380b74d45aae4285baf401ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _base: {fileID: 11400000, guid: 0da999a6df74d9247b259ddfb167fee2, type: 2}
+  _base: {fileID: 11400000, guid: 7cb384f38a429f940b4e5191ac578cc3, type: 2}
   _level: 30
   isPlayUnit: 0
 --- !u!1 &370354343
@@ -576,7 +576,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4422032505096542742, guid: 5e92e4381a92d5649bd2246f7decdb7b,
+  m_Sprite: {fileID: 1769429448931828106, guid: 5e92e4381a92d5649bd2246f7decdb7b,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
