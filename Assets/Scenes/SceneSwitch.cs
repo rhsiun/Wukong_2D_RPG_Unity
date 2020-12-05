@@ -22,17 +22,17 @@ public class SceneSwitch : MonoBehaviour
                     StartCoroutine(doNotGoBackInDialogue());
                 } else {
                    new WaitForSeconds(1f);
-                   SceneManager.LoadScene(0);
+                   SceneManager.LoadScene(1);
                 }
             }
             if(this.CompareTag("Enemy")){
                 new WaitForSeconds(1f);
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
             }
             if(this.CompareTag("Field")) {
                 if(haveSword){
                     new WaitForSeconds(1f);
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(2);
                     GameController.instance.exitedHouse = true;
                 } else {
                     StartCoroutine(doNotGoOutDialogue());
@@ -40,7 +40,7 @@ public class SceneSwitch : MonoBehaviour
             }
             if(this.CompareTag("Cave")) {
                 new WaitForSeconds(1f);
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(4);
             }
         }
     }
