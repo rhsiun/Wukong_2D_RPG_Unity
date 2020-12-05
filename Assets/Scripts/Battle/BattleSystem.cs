@@ -91,9 +91,16 @@ public class BattleSystem : MonoBehaviour
         //Debug.Log("current player hp: " + battleUnit.battleMonster.currentHP);
         battleHud.UpdateHP();
         if(isDefeated) {
-            yield return battleDialogue.TypeDialog($"{battleUnit.battleMonster._base.getName()} is defeated!");
+            yield return battleDialogue.TypeDialog("You are defeated! Start over!");
 
             yield return new WaitForSeconds(1f);
+
+            if(enemyUnit._base.name.Equals("Boss")){
+                SceneManager.LoadScene(5);
+            }
+            if(enemyUnit._base.name.Equals("The Guardian")){
+                SceneManager.LoadScene(2);
+            }
         }
         else {
             PlayerAction();
