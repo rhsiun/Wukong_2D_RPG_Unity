@@ -4929,7 +4929,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "Game Control: Use 'W','A','S','D' to move, \n'esc' to show menu, 'space'
-    to pick up assets."
+    to pick up assets.\nWhen in battle, use 'W','A','S','D' to select,\n'space' to
+    confirm."
 --- !u!222 &1271981453
 CanvasRenderer:
   m_ObjectHideFlags: 0

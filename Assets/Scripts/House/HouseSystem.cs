@@ -21,13 +21,11 @@ public class HouseSystem : MonoBehaviour
     public IEnumerator setUp()
     {   
         dialogueBox.SetActive(true);
-        // yield return (houseDialogue.TypeDialog("You were born in a small lovely town. People here are nice and friendly, and enjoy the serenity here..."));
-        // yield return new WaitForSeconds(1f);
-        // yield return (houseDialogue.TypeDialog("However, there was recently some rumors that destroy your peaceful life. A monster was witnessed to appear in the dark forest!"));
-        // yield return new WaitForSeconds(1f);
-        // yield return (houseDialogue.TypeDialog("When you wake up today, you can't find you friend, who has been living with you for years. It is said that he was kidnapped by the monster!"));
-        // yield return new WaitForSeconds(1f);
-        yield return (houseDialogue.TypeDialog("It's time to fight! Search for something useful in this room and pick it up by Space."));
+        yield return (houseDialogue.TypeDialog("Hey Kong, this is your little house. Your friend Ming has been kidnapped, you have to save him."));
+        yield return new WaitForSeconds(1f);
+        yield return (houseDialogue.TypeDialog("Try to move around by WASD, press 'ESC' to see the Menu for more game control details"));
+        yield return new WaitForSeconds(1f);
+        yield return (houseDialogue.TypeDialog("It's time to fight! Search for your ultimate blade 'Excalibur' and pick up by pressing 'Space'."));
         yield return new WaitForSeconds(1f);
         //HouseDialogueController.SetActive(false);
         dialogueBox.SetActive(false);
