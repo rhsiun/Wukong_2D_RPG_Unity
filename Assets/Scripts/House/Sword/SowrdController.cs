@@ -16,11 +16,12 @@ public class SowrdController : MonoBehaviour
         distance = Vector3.Distance(transform.position, player.position);
         if (distance < minDistance)
         {
-             Debug.Log("Area");
+            // Debug.Log("Area");
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("space");
+                //Debug.Log("space");
                 haveSWORD = true;
+                GameController.instance.haveSWORD = haveSWORD;
                 swordImg.enabled=true;
                 Destroy(gameObject);
                 

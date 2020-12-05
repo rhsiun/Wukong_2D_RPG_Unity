@@ -1,20 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class GameControlelr : MonoBehaviour
+public class GameController : MonoBehaviour
 {
 
     //Create instance
-    public static GameControlelr instance;
+    public static GameController instance;
+    public bool haveSWORD;
+    public Image swordImg;
+    public bool exitedHouse = false;
 
     //Outlets
-    public GameObject[] pokemonPrefabs;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(haveSWORD) {
+            swordImg.enabled=true;
+        }
     }
 
     //Set instance

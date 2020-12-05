@@ -14,12 +14,17 @@ public class MenuController : MonoBehaviour
     public GameObject mapMenu;
     public Image swordImg;
 
-
+    //Outlets
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(GameController.instance.haveSWORD) {
+            swordImg.enabled=true;
+        } else {
+            swordImg.enabled=false;
+        }
     }
 
     //Assign instance
@@ -27,7 +32,6 @@ public class MenuController : MonoBehaviour
     {
         instance = this;
         Hide();
-        swordImg.enabled=false;
     }
 
     // Update is called once per frame
