@@ -15,20 +15,26 @@ public class BattleDialogue: MonoBehaviour
     public List<Text> moveTexts;
     public Text maxTimes;
     public Text type;
-
+    public bool dialogueDone = false;
     public void setDialogue(string dialogue)
     {
         dialogueText.text = dialogue;
     }
 
+    public bool getDialogueDone() {
+        return dialogueDone;
+    }
     public IEnumerator TypeDialog(string dialogue)
     {
+        dialogueDone = false;
         dialogueText.text="";
         foreach(var letter in dialogue.ToCharArray())
         {
             dialogueText.text+=letter;
             yield return new WaitForSeconds(1f/letterPerSecond);
         }
+        dialogueText.text=dialogue;
+        dialogueDone = true;
     }
 
     public void EnableDialogText(bool enabled)
@@ -36,8 +42,20 @@ public class BattleDialogue: MonoBehaviour
         dialogueText.enabled = enabled;
     }
 
+    IEnumerator IWillWait()
+    {
+        yield return new WaitForSeconds(1000f);
+        // yield return StartCoroutine(WaitForInput());
+        // Debug.Log("DONE");
+    }
+    IEnumerator WaitForInput()
+    {
+        while (!dialogueDone)
+            yield return null;
+    }
      public void EnableActionSelector(bool enabled)
     {
+        //StartCoroutine(IWillWait());
         actionSelector.SetActive(enabled);
     }
     public void EnableMoveSelector(bool enabled)

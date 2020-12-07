@@ -14,15 +14,16 @@ public class BattleSystem : MonoBehaviour
     public BattleState state;
     public int currentAction;
     public int currentMove;
+    private bool dialogueDone = false;
 
     public void Start()
     {
         StartCoroutine(setUp());
     }
 
-    //Use own code coroutine
     public IEnumerator setUp()
     {
+        dialogueDone = battleDialogue.getDialogueDone();
         battleUnit.setUpMonster();
         enemyUnit.setUpMonster();
         battleHud.setUpHud(battleUnit.getBattleMonster());
@@ -37,11 +38,13 @@ public class BattleSystem : MonoBehaviour
     void PlayerAction()
     {
         state = BattleState.PlayerAction;
-        StartCoroutine(battleDialogue.TypeDialog("Choose an action"));
+        StartCoroutine(battleDialogue.TypeDialog("Choose an action"));;
         battleDialogue.EnableActionSelector(true);
-
     }
 
+    public IEnumerator waitTillDialogue() {
+        yield return new WaitForSeconds(10f);
+    }
     void PlayerMove()
     {
         state = BattleState.PlayerMove;
@@ -54,12 +57,13 @@ public class BattleSystem : MonoBehaviour
     IEnumerator PerformPlayerMove() {
         state = BattleState.Busy;
         var move = battleUnit.battleMonster._moves[currentMove];
+
+
         yield return battleDialogue.TypeDialog($"{battleUnit.battleMonster._base.getName()} used {move._Base.name}");
 
         yield return new WaitForSeconds(1f);
 
         bool isDefeated = enemyUnit.battleMonster.TakeDamage(move, battleUnit.battleMonster);
-        //Debug.Log("current enemy hp: " + enemyUnit.battleMonster.currentHP);
         enemyHud.UpdateHP();
         if(isDefeated) {
             yield return battleDialogue.TypeDialog($"{enemyUnit.battleMonster._base.getName()} is defeated!");
@@ -103,20 +107,29 @@ public class BattleSystem : MonoBehaviour
             }
         }
         else {
-            PlayerAction();
+            Update();
+            if(dialogueDone){
+                PlayerAction();
+            }
+            
         }
     }
 
     void Update()
     {
-
+        dialogueDone = battleDialogue.getDialogueDone();
         if(state == BattleState.PlayerAction)
         {
-            HandleActionSelection();
+            if(dialogueDone){
+                HandleActionSelection();
+            }
+            
         }
         else if (state == BattleState.PlayerMove)
         {
-            HandleMoveSelection();
+            if(dialogueDone){
+                HandleMoveSelection();
+            }
         }
     }
     void HandleMoveSelection()
@@ -160,6 +173,7 @@ public class BattleSystem : MonoBehaviour
     }
     void HandleActionSelection()
     {
+        //Fight
         if(Input.GetKeyDown(KeyCode.S))
         {
             if(currentAction<1)
@@ -177,28 +191,34 @@ public class BattleSystem : MonoBehaviour
 
         battleDialogue.UpdateActionSelection(currentAction);
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) )
         {
+            //canPressSpace = false;
             if(currentAction == 0)
             {
-                //Fight
+                
                 PlayerMove();
             }
             else if (currentAction == 1)
             {
                 //Run
-                StartCoroutine(RunDialogue());
+                StartCoroutine(battleDialogue.TypeDialog("Do Not Run! Defeat him to get to your friend!"));
+                Update();
+                if(dialogueDone){
+                    PlayerAction();
+                }
             }
         }
     }
     IEnumerator RunDialogue() {
-        Debug.Log("hi");
+
 
         yield return battleDialogue.TypeDialog("Do Not Run! Defeat him to get to your friend!");
 
         yield return new WaitForSeconds(1f);
 
         PlayerAction();
+
     }
 }
 
