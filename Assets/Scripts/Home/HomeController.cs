@@ -27,7 +27,7 @@ public class HomeController : MonoBehaviour
         dialogueBox.SetActive(true);
         //To do: Use own code for coroutine
         //  StartCoroutine(battleDialogue.TypeDialog($"A wild {battleUnit.getBattleMonster()._base.name} appeared"));
-        yield return (homeDialogue.TypeDialog("Let's find out the mosnter to save your friend!"));
+        yield return (homeDialogue.TypeDialog("Let's find out the monster to save your friend!"));
         yield return new WaitForSeconds(1f);
         dialogueBox.SetActive(false);
     }
